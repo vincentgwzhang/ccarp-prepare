@@ -7,7 +7,7 @@
 
 ## Domain 3 · Integration — 19%（权重最高，优先啃）
 
-- [ ] 🔴 **1. MCP（Model Context Protocol）架构与使用场景**
+- [x] 🔴 **1. MCP（Model Context Protocol）架构与使用场景** — 2026-09-07 · [学习](knowledge/domain-03/mcp-architecture-and-use-cases/knowledge.md) · [8 道练习](knowledge/domain-03/mcp-architecture-and-use-cases/questions.md)
 - [ ] 🟡 **2. Agent-to-Agent 通信模式**
 - [ ] 🟡 **3. API/CLI 集成模式对比**
 - [ ] 🟡 **4. 工具/Agent 能力配置的"capability bloat"评估与最小权限原则**
@@ -17,7 +17,7 @@
 - [ ] 🔴 **8. RAG 流水线设计：分块（chunking）策略**
 - [ ] 🟡 **9. RAG 流水线设计：索引/向量库策略**
 - [ ] 🔴 **10. 按数据形态/查询模式选择检索策略（混合检索、语义 vs 关键词）**
-- [ ] 🔴 **11. Progressive disclosure（渐进式披露）vs 单体上下文策略**
+- [ ] 🔴 **11. Progressive discovery（渐进式发现）vs 单体上下文策略**
 
 ---
 
@@ -87,13 +87,18 @@
 
 | 标记 | 数量 | 含义 |
 |---|---|---|
-| 🟢 强项，快速对齐 | 13 | 你已有等价经验，主要是换 Claude 语境的术语 |
-| 🟡 有基础，需补方法论 | 15 | 工程直觉在，需要补 LLM/Claude 专属做法 |
+| 🟢 强项，快速对齐 | 11 | 你已有等价经验，主要是换 Claude 语境的术语 |
+| 🟡 有基础，需补方法论 | 17 | 工程直觉在，需要补 LLM/Claude 专属做法 |
 | 🔴 全新知识 | 15 | 需要从零系统学习 |
 
-**建议击破顺序**：优先扫掉 Domain 3（Integration，19% 权重 + 最多🔴项）里的 MCP、RAG chunking、检索策略这几个纯新知识点；同步补 Domain 2 的 Claude 模型选型和 Prompt Caching；Domain 6 基本可以直接跳过或快速过一遍，把省下来的时间全砸在 🔴 项上。
+**建议击破顺序**：结合 Exam_Guide.md 的明确要求、Domain 权重、前置依赖与实际完成情况，每次选择一个知识点。优先考虑 Domain 3 的 MCP、RAG 等薄弱项，必要时先补前置基础。Domain 6 占 14%，已有经验可帮助加快学习，但不能跳过指南目标；颜色只代表学习基础，不代表考试重要性。
+
+## 执行记录
+
+- 2026-09-07：完成 #1 MCP 架构与使用场景（两个文件、8 道练习）。依据 Guide 第 6 节 Domain 3 的集成机制选型目标和第 8 节样题设计。将 #11 英文术语对齐 Guide 的 progressive discovery；移除“Domain 6 可以跳过”的建议；按实际条目修正颜色统计为 11/17/15。本次未完成其他知识点。最新 MCP 协议行为与旧版区别在教材中标注，不将版本变化擅自扩为考试重点。
 
 ## 学习资源建议
+
 - 官方 Anthropic 文档（Claude API、MCP、Skills、Prompt Engineering 指南）是核心一手资料
 - 动手做一个端到端 Claude 项目（RAG + 评估 + 可观测性），把清单里的知识点在实操中串起来记忆
 - 每学完一个 🔴 项，回到 Exam Guide 第8节的样题风格，自己写一道类似难度的题目检验理解
