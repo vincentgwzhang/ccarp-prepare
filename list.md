@@ -8,7 +8,7 @@
 ## Domain 3 · Integration — 19%（权重最高，优先啃）
 
 - [x] 🔴 **1. MCP（Model Context Protocol）架构与使用场景** — 2026-09-07 · [学习](knowledge/domain-03/mcp-architecture-and-use-cases/knowledge.md) · [8 道练习](knowledge/domain-03/mcp-architecture-and-use-cases/questions.md)
-- [ ] 🟡 **2. Agent-to-Agent 通信模式**
+- [x] 🟡 **2. Agent-to-Agent 通信模式** — 2026-09-08 · [学习](knowledge/domain-03/agent-to-agent-communication-patterns/knowledge.md) · [8 道练习](knowledge/domain-03/agent-to-agent-communication-patterns/questions.md)
 - [ ] 🟡 **3. API/CLI 集成模式对比**
 - [ ] 🟡 **4. 工具/Agent 能力配置的"capability bloat"评估与最小权限原则**
 - [ ] 🟡 **5. Agentic 系统的鉴权/授权（Auth/Authz）架构设计**
@@ -95,6 +95,7 @@
 
 ## 执行记录
 
+- 2026-09-08：完成 #2 Agent-to-Agent 通信模式（两个文件、8 道练习）。依据 Guide 第 6 节 Domain 3 的集成机制选型目标，使用 Anthropic 的 orchestrator–worker 实践与 A2A 官方规范解释模式和边界。Guide 使用的是泛称 agent-to-agent，未点名 A2A Protocol，因此不将具体协议字段提升为必考范围。本次未发现新的清单冲突，未完成其他知识点。
 - 2026-09-07：完成 #1 MCP 架构与使用场景（两个文件、8 道练习）。依据 Guide 第 6 节 Domain 3 的集成机制选型目标和第 8 节样题设计。将 #11 英文术语对齐 Guide 的 progressive discovery；移除“Domain 6 可以跳过”的建议；按实际条目修正颜色统计为 11/17/15。本次未完成其他知识点。最新 MCP 协议行为与旧版区别在教材中标注，不将版本变化擅自扩为考试重点。
 
 ## 学习资源建议
