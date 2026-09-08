@@ -3,12 +3,14 @@
 > 依据官方 Exam Guide v1.0（2026年7月生效）第6节逐条拆解，共 43 个知识点，按领域权重排序。
 > 标记说明：🟢 你已有底子，只需换语言对齐 | 🟡 有相关经验，需补 LLM/Claude 专属方法论 | 🔴 全新知识，需要从零学
 
+> 阅读顺序：按知识点文件夹的 `01_`、`02_`、`03_`…前缀阅读。编号按实际学习顺序在所有 Domain 间连续递增；原清单条目编号不一定等于学习序号。每个知识点先读 knowledge.md，再做 questions.md。
+
 ---
 
 ## Domain 3 · Integration — 19%（权重最高，优先啃）
 
-- [x] 🔴 **1. MCP（Model Context Protocol）架构与使用场景** — 2026-09-07 · [学习](knowledge/domain-03/mcp-architecture-and-use-cases/knowledge.md) · [8 道练习](knowledge/domain-03/mcp-architecture-and-use-cases/questions.md)
-- [x] 🟡 **2. Agent-to-Agent 通信模式** — 2026-09-08 · [学习](knowledge/domain-03/agent-to-agent-communication-patterns/knowledge.md) · [8 道练习](knowledge/domain-03/agent-to-agent-communication-patterns/questions.md)
+- [x] 🔴 **1. MCP（Model Context Protocol）架构与使用场景** — 学习序号 01 · 2026-09-07 · [学习](knowledge/domain-03/01_mcp-architecture-and-use-cases/knowledge.md) · [8 道练习](knowledge/domain-03/01_mcp-architecture-and-use-cases/questions.md)
+- [x] 🟡 **2. Agent-to-Agent 通信模式** — 学习序号 02 · 2026-09-08 · [学习](knowledge/domain-03/02_agent-to-agent-communication-patterns/knowledge.md) · [8 道练习](knowledge/domain-03/02_agent-to-agent-communication-patterns/questions.md)
 - [ ] 🟡 **3. API/CLI 集成模式对比**
 - [ ] 🟡 **4. 工具/Agent 能力配置的"capability bloat"评估与最小权限原则**
 - [ ] 🟡 **5. Agentic 系统的鉴权/授权（Auth/Authz）架构设计**
