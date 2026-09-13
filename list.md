@@ -15,7 +15,7 @@
 - [x] 🟡 **4. 工具/Agent 能力配置的"capability bloat"评估与最小权限原则** — 学习序号 04 · 2026-09-10 · [学习](knowledge/domain-03/04_capability-bloat-and-least-privilege/knowledge.md) · [7 道练习](knowledge/domain-03/04_capability-bloat-and-least-privilege/questions.md)
 - [x] 🟡 **5. Agentic 系统的鉴权/授权（Auth/Authz）架构设计** — 学习序号 05 · 2026-09-11 · [学习](knowledge/domain-03/05_agentic-authentication-and-authorization/knowledge.md) · [7 道练习](knowledge/domain-03/05_agentic-authentication-and-authorization/questions.md)
 - [x] 🟡 **6. 准确率与延迟的权衡分析（accuracy-latency trade-off）** — 学习序号 06 · 2026-09-12 · [学习](knowledge/domain-03/06_accuracy-latency-tradeoffs/knowledge.md) · [6 道练习](knowledge/domain-03/06_accuracy-latency-tradeoffs/questions.md)
-- [ ] 🟡 **7. 大规模场景下的可观测性设计（日志、追踪、监控）**
+- [x] 🟡 **7. 大规模场景下的可观测性设计（日志、追踪、监控）** — 学习序号 07 · 2026-09-13 · [学习](knowledge/domain-03/07_observability-at-scale/knowledge.md) · [7 道练习](knowledge/domain-03/07_observability-at-scale/questions.md)
 - [ ] 🔴 **8. RAG 流水线设计：分块（chunking）策略**
 - [ ] 🟡 **9. RAG 流水线设计：索引/向量库策略**
 - [ ] 🔴 **10. 按数据形态/查询模式选择检索策略（混合检索、语义 vs 关键词）**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-13：完成 #7 大规模 Claude 系统可观测性设计（学习序号 07，两个文件、7 道练习）。直接对齐 Guide Domain 3 的 observability challenges 与 monitoring strategies at scale 目标；核查 Anthropic API request ID、errors/rate limits、Usage & Cost API、Claude Code OTel 及 OpenTelemetry traces/sampling 官方资料。无新增清单冲突；明确与 Domain 4 持续性能监控的交集和侧重点，不把 Claude Code 的 telemetry 实现泛化为所有 Claude API 应用的默认能力。
 - 2026-09-12：完成 #6 准确率与延迟架构权衡（学习序号 06，两个文件、6 道练习）。对齐 Guide Domain 3 的 accuracy-latency trade-offs 与配置论证目标；核查 Anthropic 的 agent 架构、并行工具、streaming 和 prompt caching 文档。无新增清单冲突；教材不把具体模型性能或价格当成 Guide 要求。
 - 2026-09-11：完成 #5 Agentic 系统 Authentication / Authorization 架构（学习序号 05，两个文件、7 道练习）。对齐 Guide Domain 3 的 AuthN/AuthZ requirements 与 security gaps 分析目标；核查 Anthropic Claude API 认证/调用边界及最新版 MCP 2026-07-28 Authorization、Security Best Practices。无新增清单冲突；具体 Claude 凭证类型、workspace 字段和 OAuth/MCP 规范细节仅作当前实现例证，不扩展为 Guide 必背要求。
 - 2026-09-10：完成 #4 capability bloat 评估与最小权限（学习序号 04，两个文件、7 道练习）。直接对齐 Guide Domain 3 的能力配置目标及 Sample 1 rationale；核查 Anthropic 工具定义/执行边界、agent 设计原则和 Claude Code 权限/安全文档。无新增清单冲突；Claude Code 规则语法只作当前实现例证，不扩展为 Guide 必背要求。
