@@ -16,7 +16,7 @@
 - [x] 🟡 **5. Agentic 系统的鉴权/授权（Auth/Authz）架构设计** — 学习序号 05 · 2026-09-11 · [学习](knowledge/domain-03/05_agentic-authentication-and-authorization/knowledge.md) · [7 道练习](knowledge/domain-03/05_agentic-authentication-and-authorization/questions.md)
 - [x] 🟡 **6. 准确率与延迟的权衡分析（accuracy-latency trade-off）** — 学习序号 06 · 2026-09-12 · [学习](knowledge/domain-03/06_accuracy-latency-tradeoffs/knowledge.md) · [6 道练习](knowledge/domain-03/06_accuracy-latency-tradeoffs/questions.md)
 - [x] 🟡 **7. 大规模场景下的可观测性设计（日志、追踪、监控）** — 学习序号 07 · 2026-09-13 · [学习](knowledge/domain-03/07_observability-at-scale/knowledge.md) · [7 道练习](knowledge/domain-03/07_observability-at-scale/questions.md)
-- [ ] 🔴 **8. RAG 流水线设计：分块（chunking）策略**
+- [x] 🔴 **8. RAG 流水线设计：分块（chunking）策略** — 学习序号 08 · 2026-09-14 · [学习](knowledge/domain-03/08_rag-chunking-strategies/knowledge.md) · [7 道练习](knowledge/domain-03/08_rag-chunking-strategies/questions.md)
 - [ ] 🟡 **9. RAG 流水线设计：索引/向量库策略**
 - [ ] 🔴 **10. 按数据形态/查询模式选择检索策略（混合检索、语义 vs 关键词）**
 - [ ] 🔴 **11. Progressive discovery（渐进式发现）vs 单体上下文策略**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-14：完成 #8 RAG chunking 策略（学习序号 08，两个文件、7 道练习）。直接对齐 Guide Domain 3 的 RAG pipeline chunking/indexing 目标，并限定本课只深入分块；核查 Anthropic Contextual Retrieval 与 Claude Search Results/Citations 官方资料。无新增清单冲突；明确 retrieval chunk 与 Claude citation block 的层次差异，不把 Anthropic 2024 实验参数或效果数字当成通用默认值或考试要求。
 - 2026-09-13：完成 #7 大规模 Claude 系统可观测性设计（学习序号 07，两个文件、7 道练习）。直接对齐 Guide Domain 3 的 observability challenges 与 monitoring strategies at scale 目标；核查 Anthropic API request ID、errors/rate limits、Usage & Cost API、Claude Code OTel 及 OpenTelemetry traces/sampling 官方资料。无新增清单冲突；明确与 Domain 4 持续性能监控的交集和侧重点，不把 Claude Code 的 telemetry 实现泛化为所有 Claude API 应用的默认能力。
 - 2026-09-12：完成 #6 准确率与延迟架构权衡（学习序号 06，两个文件、6 道练习）。对齐 Guide Domain 3 的 accuracy-latency trade-offs 与配置论证目标；核查 Anthropic 的 agent 架构、并行工具、streaming 和 prompt caching 文档。无新增清单冲突；教材不把具体模型性能或价格当成 Guide 要求。
 - 2026-09-11：完成 #5 Agentic 系统 Authentication / Authorization 架构（学习序号 05，两个文件、7 道练习）。对齐 Guide Domain 3 的 AuthN/AuthZ requirements 与 security gaps 分析目标；核查 Anthropic Claude API 认证/调用边界及最新版 MCP 2026-07-28 Authorization、Security Best Practices。无新增清单冲突；具体 Claude 凭证类型、workspace 字段和 OAuth/MCP 规范细节仅作当前实现例证，不扩展为 Guide 必背要求。
