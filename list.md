@@ -19,7 +19,7 @@
 - [x] 🔴 **8. RAG 流水线设计：分块（chunking）策略** — 学习序号 08 · 2026-09-14 · [学习](knowledge/domain-03/08_rag-chunking-strategies/knowledge.md) · [7 道练习](knowledge/domain-03/08_rag-chunking-strategies/questions.md)
 - [x] 🟡 **9. RAG 流水线设计：索引/向量库策略** — 学习序号 09 · 2026-09-15 · [学习](knowledge/domain-03/09_rag-index-and-vector-store-strategies/knowledge.md) · [7 道练习](knowledge/domain-03/09_rag-index-and-vector-store-strategies/questions.md)
 - [x] 🔴 **10. 按数据形态/查询模式选择检索策略（混合检索、语义 vs 关键词）** — 学习序号 10 · 2026-09-16 · [学习](knowledge/domain-03/10_retrieval-strategies-by-data-and-query/knowledge.md) · [7 道练习](knowledge/domain-03/10_retrieval-strategies-by-data-and-query/questions.md)
-- [ ] 🔴 **11. Progressive discovery（渐进式发现）vs 单体上下文策略**
+- [x] 🔴 **11. Progressive discovery（渐进式发现）vs 单体上下文策略** — 学习序号 11 · 2026-09-17 · [学习](knowledge/domain-03/11_progressive-discovery-vs-monolithic-context/knowledge.md) · [7 道练习](knowledge/domain-03/11_progressive-discovery-vs-monolithic-context/questions.md)
 
 ---
 
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-17：完成 #11 Progressive discovery vs monolithic context（学习序号 11，两个文件、7 道练习）。直接对齐 Guide Domain 3 的独立目标；核查 Anthropic context engineering、Tool Search、Agent Skills 与 MCP Tools 官方资料。无新增清单冲突；说明 Guide 的 progressive discovery 与官方资料 progressive disclosure/just-in-time context 的关系，并明确核心安全规则不可延迟加载。Domain 3 的清单知识点至此全部完成，本次未生成其他 Domain 内容。
 - 2026-09-16：完成 #10 按数据形态/查询模式选择检索策略（学习序号 10，两个文件、7 道练习）。直接对齐 Guide Domain 3 的独立 retrieval strategy 目标；核查 Anthropic Contextual Retrieval/Cookbook 与 OpenSearch hybrid/fusion/optimization 官方文档。无新增清单冲突；明确 exact identifier、semantic intent、structured query 与 hybrid 的适用边界，不把 Anthropic 实验数字或某一搜索产品配置当成考试必背结论。
 - 2026-09-15：完成 #9 RAG 索引/向量库策略（学习序号 09，两个文件、7 道练习）。对齐 Guide Domain 3 的 RAG indexing 目标与 Sample 3 的文档刷新故障诊断；核查 Anthropic Embeddings、Contextual Retrieval 及 pgvector 官方 exact/ANN/filter 文档。无新增清单冲突；厂商实现仅作权衡例证，不将当前 embedding 型号、dimension 或 index 默认参数列为考试必背内容。
 - 2026-09-14：完成 #8 RAG chunking 策略（学习序号 08，两个文件、7 道练习）。直接对齐 Guide Domain 3 的 RAG pipeline chunking/indexing 目标，并限定本课只深入分块；核查 Anthropic Contextual Retrieval 与 Claude Search Results/Citations 官方资料。无新增清单冲突；明确 retrieval chunk 与 Claude citation block 的层次差异，不把 Anthropic 2024 实验参数或效果数字当成通用默认值或考试要求。
