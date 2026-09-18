@@ -25,7 +25,7 @@
 
 ## Domain 1 · Solution Design & Architecture — 17%
 
-- [ ] 🟢 **12. 业务问题 → Claude 解决方案的映射框架**
+- [x] 🟢 **12. 业务问题 → Claude 解决方案的映射框架** — 学习序号 12 · 2026-09-18 · [学习](knowledge/domain-01/12_business-problem-to-claude-solution-mapping/knowledge.md) · [7 道练习](knowledge/domain-01/12_business-problem-to-claude-solution-mapping/questions.md)
 - [ ] 🟢 **13. 端到端架构设计范式（输入→处理→输出→反馈闭环）**
 - [ ] 🔴 **14. 架构模式选型：Workflow vs Agentic vs Augmented LLM（Anthropic 官方分类法）**
 - [ ] 🟡 **15. 多 Agent 系统设计与编排策略**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-18：完成 #12 业务问题 → Claude 解决方案映射框架（学习序号 12，两个文件、7 道练习）。直接对齐 Guide Domain 1 的 “Translate business problems into Claude-based AI solutions”；核查 Anthropic Building Effective AI Agents 与 success criteria/evaluation 官方文档。无新增清单冲突；本课限定在业务目标、任务契约、数据/真相源、风险/autonomy、价值与验收的映射，没有提前替代后续端到端架构或 workflow/agent 模式选型知识点。
 - 2026-09-17：完成 #11 Progressive discovery vs monolithic context（学习序号 11，两个文件、7 道练习）。直接对齐 Guide Domain 3 的独立目标；核查 Anthropic context engineering、Tool Search、Agent Skills 与 MCP Tools 官方资料。无新增清单冲突；说明 Guide 的 progressive discovery 与官方资料 progressive disclosure/just-in-time context 的关系，并明确核心安全规则不可延迟加载。Domain 3 的清单知识点至此全部完成，本次未生成其他 Domain 内容。
 - 2026-09-16：完成 #10 按数据形态/查询模式选择检索策略（学习序号 10，两个文件、7 道练习）。直接对齐 Guide Domain 3 的独立 retrieval strategy 目标；核查 Anthropic Contextual Retrieval/Cookbook 与 OpenSearch hybrid/fusion/optimization 官方文档。无新增清单冲突；明确 exact identifier、semantic intent、structured query 与 hybrid 的适用边界，不把 Anthropic 实验数字或某一搜索产品配置当成考试必背结论。
 - 2026-09-15：完成 #9 RAG 索引/向量库策略（学习序号 09，两个文件、7 道练习）。对齐 Guide Domain 3 的 RAG indexing 目标与 Sample 3 的文档刷新故障诊断；核查 Anthropic Embeddings、Contextual Retrieval 及 pgvector 官方 exact/ANN/filter 文档。无新增清单冲突；厂商实现仅作权衡例证，不将当前 embedding 型号、dimension 或 index 默认参数列为考试必背内容。
