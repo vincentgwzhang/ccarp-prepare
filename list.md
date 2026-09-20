@@ -27,7 +27,7 @@
 
 - [x] 🟢 **12. 业务问题 → Claude 解决方案的映射框架** — 学习序号 12 · 2026-09-18 · [学习](knowledge/domain-01/12_business-problem-to-claude-solution-mapping/knowledge.md) · [7 道练习](knowledge/domain-01/12_business-problem-to-claude-solution-mapping/questions.md)
 - [x] 🟢 **13. 端到端架构设计范式（输入→处理→输出→反馈闭环）** — 学习序号 13 · 2026-09-19 · [学习](knowledge/domain-01/13_end-to-end-claude-architecture/knowledge.md) · [7 道练习](knowledge/domain-01/13_end-to-end-claude-architecture/questions.md)
-- [ ] 🔴 **14. 架构模式选型：Workflow vs Agentic vs Augmented LLM（Anthropic 官方分类法）**
+- [x] 🔴 **14. 架构模式选型：Workflow vs Agentic vs Augmented LLM（Anthropic 官方分类法）** — 学习序号 14 · 2026-09-20 · [学习](knowledge/domain-01/14_workflow-agent-augmented-llm-selection/knowledge.md) · [8 道练习](knowledge/domain-01/14_workflow-agent-augmented-llm-selection/questions.md)
 - [ ] 🟡 **15. 多 Agent 系统设计与编排策略**
 - [ ] 🟢 **16. 复杂问题的拆解技术**
 - [ ] 🟢 **17. 业务价值支柱对齐框架（效率/转型/生产力/成本/性能SLA）**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-20：完成 #14 Workflow vs Agentic vs Augmented LLM 架构模式选型（学习序号 14，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Select appropriate architectural patterns (workflow, agentic, augmented LLM)”；核查 Anthropic Building Effective AI Agents、2026 Managed Agents 架构文章和当前 Managed Agents 文档。无清单条目冲突；补充关键粒度澄清：augmented LLM 是可被 workflow/agent 复用的基础 building block，Workflow 与 Agent 的核心区别是主要控制路径由代码还是模型决定。
 - 2026-09-19：完成 #13 端到端 Claude 架构（学习序号 13，两个文件、7 道练习）。直接对齐 Guide Domain 1 的 “Design end-to-end architectures (input → processing → output → feedback loops)”；核查 Anthropic agent architecture、Messages API、stop reasons、API errors 与 evaluation 官方资料。无新增清单冲突；明确区分单个任务内的 runtime control loop 与跨版本 improvement loop，并将本课限定于端到端组件及责任，不提前替代 #14 的架构模式选型。
 - 2026-09-18：完成 #12 业务问题 → Claude 解决方案映射框架（学习序号 12，两个文件、7 道练习）。直接对齐 Guide Domain 1 的 “Translate business problems into Claude-based AI solutions”；核查 Anthropic Building Effective AI Agents 与 success criteria/evaluation 官方文档。无新增清单冲突；本课限定在业务目标、任务契约、数据/真相源、风险/autonomy、价值与验收的映射，没有提前替代后续端到端架构或 workflow/agent 模式选型知识点。
 - 2026-09-17：完成 #11 Progressive discovery vs monolithic context（学习序号 11，两个文件、7 道练习）。直接对齐 Guide Domain 3 的独立目标；核查 Anthropic context engineering、Tool Search、Agent Skills 与 MCP Tools 官方资料。无新增清单冲突；说明 Guide 的 progressive discovery 与官方资料 progressive disclosure/just-in-time context 的关系，并明确核心安全规则不可延迟加载。Domain 3 的清单知识点至此全部完成，本次未生成其他 Domain 内容。
