@@ -29,7 +29,7 @@
 - [x] 🟢 **13. 端到端架构设计范式（输入→处理→输出→反馈闭环）** — 学习序号 13 · 2026-09-19 · [学习](knowledge/domain-01/13_end-to-end-claude-architecture/knowledge.md) · [7 道练习](knowledge/domain-01/13_end-to-end-claude-architecture/questions.md)
 - [x] 🔴 **14. 架构模式选型：Workflow vs Agentic vs Augmented LLM（Anthropic 官方分类法）** — 学习序号 14 · 2026-09-20 · [学习](knowledge/domain-01/14_workflow-agent-augmented-llm-selection/knowledge.md) · [8 道练习](knowledge/domain-01/14_workflow-agent-augmented-llm-selection/questions.md)
 - [x] 🟡 **15. 多 Agent 系统设计与编排策略** — 学习序号 15 · 2026-09-21 · [学习](knowledge/domain-01/15_multi-agent-systems-and-orchestration/knowledge.md) · [8 道练习](knowledge/domain-01/15_multi-agent-systems-and-orchestration/questions.md)
-- [ ] 🟢 **16. 复杂问题的拆解技术**
+- [x] 🟢 **16. 复杂问题的拆解技术** — 学习序号 16 · 2026-09-22 · [学习](knowledge/domain-01/16_complex-problem-decomposition/knowledge.md) · [8 道练习](knowledge/domain-01/16_complex-problem-decomposition/questions.md)
 - [ ] 🟢 **17. 业务价值支柱对齐框架（效率/转型/生产力/成本/性能SLA）**
 
 ---
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-22：完成 #16 复杂问题的拆解技术（学习序号 16，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Apply decomposition techniques for complex problem solving”；核查 Anthropic 的 workflow decomposition patterns、context engineering、long-running agent harness 与 evaluation 官方资料。无清单条目冲突；明确本课聚焦 task graph、粒度、contracts、gates、incremental delivery 和 recomposition，不重复 #15 的多 Agent 编排实现。
 - 2026-09-21：完成 #15 多 Agent 系统设计与编排策略（学习序号 15，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Design multi-agent systems and orchestration strategies”；核查 Anthropic 多 Agent research 实践、Building Effective AI Agents 与当前 Managed Agents multiagent orchestration 文档。无清单条目冲突；明确本课聚焦 topology、角色/委派契约、调度、状态、汇聚和失败治理，与 #2 的 Agent-to-Agent 通信协议/传输层侧重点区分。
 - 2026-09-20：完成 #14 Workflow vs Agentic vs Augmented LLM 架构模式选型（学习序号 14，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Select appropriate architectural patterns (workflow, agentic, augmented LLM)”；核查 Anthropic Building Effective AI Agents、2026 Managed Agents 架构文章和当前 Managed Agents 文档。无清单条目冲突；补充关键粒度澄清：augmented LLM 是可被 workflow/agent 复用的基础 building block，Workflow 与 Agent 的核心区别是主要控制路径由代码还是模型决定。
 - 2026-09-19：完成 #13 端到端 Claude 架构（学习序号 13，两个文件、7 道练习）。直接对齐 Guide Domain 1 的 “Design end-to-end architectures (input → processing → output → feedback loops)”；核查 Anthropic agent architecture、Messages API、stop reasons、API errors 与 evaluation 官方资料。无新增清单冲突；明确区分单个任务内的 runtime control loop 与跨版本 improvement loop，并将本课限定于端到端组件及责任，不提前替代 #14 的架构模式选型。
