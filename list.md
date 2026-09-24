@@ -36,7 +36,7 @@
 
 ## Domain 4 · Evaluation, Testing & Optimization — 16%
 
-- [ ] 🔴 **18. LLM 评估指标体系（准确率/延迟/成本/安全/security）**
+- [x] 🔴 **18. LLM 评估指标体系（准确率/延迟/成本/安全/security）** — 学习序号 18 · 2026-09-24 · [学习](knowledge/domain-04/18_llm-evaluation-metrics/knowledge.md) · [8 道练习](knowledge/domain-04/18_llm-evaluation-metrics/questions.md)
 - [ ] 🔴 **19. 评估数据集设计与混合方法论测试框架**
 - [ ] 🟡 **20. LLM 系统的 A/B 测试方法**
 - [ ] 🔴 **21. 故障诊断：prompt failure vs 幻觉 vs 模型不匹配**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-24：完成 #18 LLM 评估指标体系（学习序号 18，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Define evaluation metrics (accuracy, latency, cost, safety, security)”；核查 Anthropic success criteria/evaluation、latency、hallucination、prompt injection 与 Usage and Cost API 官方资料。无清单条目冲突；本课聚焦 metric definition、aggregation、threshold、guardrail 与 grader 选择，未提前展开 #19 的 evaluation dataset 和 mixed-method test framework。
 - 2026-09-23：完成 #17 业务价值支柱对齐框架（学习序号 17，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Align solutions to business value pillars (efficiency, transformation, productivity, cost, performance SLAs)”；核查 Anthropic success criteria/evaluation、latency、prompt caching、batch processing 与 Usage and Cost API 官方资料。无清单条目冲突；本课聚焦业务结果、KPI、架构杠杆、guardrail 与 owner 的可追溯关系，不提前展开 Domain 4 的完整评估方法。Domain 1 的清单知识点至此全部完成。
 - 2026-09-22：完成 #16 复杂问题的拆解技术（学习序号 16，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Apply decomposition techniques for complex problem solving”；核查 Anthropic 的 workflow decomposition patterns、context engineering、long-running agent harness 与 evaluation 官方资料。无清单条目冲突；明确本课聚焦 task graph、粒度、contracts、gates、incremental delivery 和 recomposition，不重复 #15 的多 Agent 编排实现。
 - 2026-09-21：完成 #15 多 Agent 系统设计与编排策略（学习序号 15，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Design multi-agent systems and orchestration strategies”；核查 Anthropic 多 Agent research 实践、Building Effective AI Agents 与当前 Managed Agents multiagent orchestration 文档。无清单条目冲突；明确本课聚焦 topology、角色/委派契约、调度、状态、汇聚和失败治理，与 #2 的 Agent-to-Agent 通信协议/传输层侧重点区分。
