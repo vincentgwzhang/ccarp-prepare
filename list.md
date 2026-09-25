@@ -37,7 +37,7 @@
 ## Domain 4 · Evaluation, Testing & Optimization — 16%
 
 - [x] 🔴 **18. LLM 评估指标体系（准确率/延迟/成本/安全/security）** — 学习序号 18 · 2026-09-24 · [学习](knowledge/domain-04/18_llm-evaluation-metrics/knowledge.md) · [8 道练习](knowledge/domain-04/18_llm-evaluation-metrics/questions.md)
-- [ ] 🔴 **19. 评估数据集设计与混合方法论测试框架**
+- [x] 🔴 **19. 评估数据集设计与混合方法论测试框架** — 学习序号 19 · 2026-09-25 · [学习](knowledge/domain-04/19_evaluation-datasets-and-mixed-method-frameworks/knowledge.md) · [8 道练习](knowledge/domain-04/19_evaluation-datasets-and-mixed-method-frameworks/questions.md)
 - [ ] 🟡 **20. LLM 系统的 A/B 测试方法**
 - [ ] 🔴 **21. 故障诊断：prompt failure vs 幻觉 vs 模型不匹配**
 - [ ] 🟡 **22. Token 用量/延迟/成本优化技巧**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-25：完成 #19 Evaluation dataset 与 mixed-method test framework（学习序号 19，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Design evaluation datasets and test frameworks using mixed methodologies”；核查 Anthropic agent eval 实践、success criteria/evaluation 指南、evaluation challenges 与 agent architecture 官方资料。无清单条目冲突；本课聚焦数据来源/切分/覆盖、task-trial-trace-outcome、isolated harness，以及 deterministic/LLM/human/production signals 的组合，未提前展开 #20 的 A/B testing 方法。
 - 2026-09-24：完成 #18 LLM 评估指标体系（学习序号 18，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Define evaluation metrics (accuracy, latency, cost, safety, security)”；核查 Anthropic success criteria/evaluation、latency、hallucination、prompt injection 与 Usage and Cost API 官方资料。无清单条目冲突；本课聚焦 metric definition、aggregation、threshold、guardrail 与 grader 选择，未提前展开 #19 的 evaluation dataset 和 mixed-method test framework。
 - 2026-09-23：完成 #17 业务价值支柱对齐框架（学习序号 17，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Align solutions to business value pillars (efficiency, transformation, productivity, cost, performance SLAs)”；核查 Anthropic success criteria/evaluation、latency、prompt caching、batch processing 与 Usage and Cost API 官方资料。无清单条目冲突；本课聚焦业务结果、KPI、架构杠杆、guardrail 与 owner 的可追溯关系，不提前展开 Domain 4 的完整评估方法。Domain 1 的清单知识点至此全部完成。
 - 2026-09-22：完成 #16 复杂问题的拆解技术（学习序号 16，两个文件、8 道练习）。直接对齐 Guide Domain 1 的 “Apply decomposition techniques for complex problem solving”；核查 Anthropic 的 workflow decomposition patterns、context engineering、long-running agent harness 与 evaluation 官方资料。无清单条目冲突；明确本课聚焦 task graph、粒度、contracts、gates、incremental delivery 和 recomposition，不重复 #15 的多 Agent 编排实现。
