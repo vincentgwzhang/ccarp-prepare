@@ -41,7 +41,7 @@
 - [x] 🟡 **20. LLM 系统的 A/B 测试方法** — 学习序号 20 · 2026-09-26 · [学习](knowledge/domain-04/20_ab-testing-and-iterative-improvement/knowledge.md) · [8 道练习](knowledge/domain-04/20_ab-testing-and-iterative-improvement/questions.md)
 - [x] 🔴 **21. 故障诊断：prompt failure vs 幻觉 vs 模型不匹配** — 学习序号 21 · 2026-09-27 · [学习](knowledge/domain-04/21_prompt-hallucination-model-mismatch-diagnosis/knowledge.md) · [8 道练习](knowledge/domain-04/21_prompt-hallucination-model-mismatch-diagnosis/questions.md)
 - [x] 🟡 **22. Token 用量/延迟/成本优化技巧** — 学习序号 22 · 2026-09-28 · [学习](knowledge/domain-04/22_token-latency-cost-performance-optimization/knowledge.md) · [8 道练习](knowledge/domain-04/22_token-latency-cost-performance-optimization/questions.md)
-- [ ] 🟢 **23. 基于日志和可观测性工具的系统性能监控**
+- [x] 🟢 **23. 基于日志和可观测性工具的系统性能监控** — 学习序号 23 · 2026-09-29 · [学习](knowledge/domain-04/23_system-performance-monitoring-with-observability/knowledge.md) · [8 道练习](knowledge/domain-04/23_system-performance-monitoring-with-observability/questions.md)
 
 ---
 
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-09-29：完成 #23 基于日志和可观测性工具的系统性能监控（学习序号 23，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Monitor system performance using logging and observability tools”；核查 Anthropic API errors、rate limits、Usage/Cost API、agent eval 生产监控实践及 OpenTelemetry 官方资料。无清单条目冲突；补充必要边界：#07 侧重规模化 observability 架构，本课侧重用端到端 telemetry、版本/slices、SLO/告警与质量抽样发现 production drift，并把失败反馈为 regression eval。Domain 4 的清单知识点至此全部完成。
 - 2026-09-28：完成 #22 Token、latency 与 cost-performance trade-off 优化（学习序号 22，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Optimize token usage, latency, and cost-performance trade-offs”及 Sample 2 的稳定前缀缓存判断；核查 Anthropic latency、prompt caching、token counting、batch processing 与 Usage/Cost API 官方资料。无清单条目冲突；本课以 quality/safety 门槛、端到端 latency/cost breakdown 和 cost per successful task 为主线，明确 streaming、batch、caching、context reduction、model routing 与 tool parallelism 的不同作用，未提前展开 #23 的持续性能监控体系。
 - 2026-09-27：完成 #21 prompt failure、hallucination 与 model mismatch 故障诊断（学习序号 21，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Diagnose system issues (prompt failure, hallucinations, model mismatch)”；核查 Anthropic hallucination、context engineering、model selection、output consistency 与 agent/tool 官方资料。无清单条目冲突；补充必要诊断边界：错误输出只是 symptom，须先排除 retrieval/context/tool/parser 等系统故障，再用 oracle-context、prompt-only 与 model-only 对照归因。本课未提前展开 #22 的完整 token/latency/cost 优化。
 - 2026-09-26：完成 #20 LLM 系统 A/B testing 与 iterative improvement（学习序号 20，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Conduct A/B testing and iterative improvements”；核查 Anthropic agent eval 实践与 success criteria/evaluation 官方资料，并以 Microsoft 官方 experimentation 资料补充 SRM 数据质量检查。无清单条目冲突；本课聚焦随机化、真实曝光、primary/guardrail、实验有效性、发布/回滚与 production failure 回流，不提前展开 #21 的 prompt failure、hallucination、model mismatch 故障诊断。
