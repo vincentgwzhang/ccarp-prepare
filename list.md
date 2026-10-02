@@ -49,7 +49,7 @@
 
 - [x] 🔴 **24. Guardrails 与安全控制实现模式** — 学习序号 24 · 2026-09-30 · [学习](knowledge/domain-05/24_guardrails-and-safety-control-patterns/knowledge.md) · [8 道练习](knowledge/domain-05/24_guardrails-and-safety-control-patterns/questions.md)
 - [x] 🔴 **25. LLM 系统的风险/局限性/失效模式分类学** — 学习序号 25 · 2026-10-01 · [学习](knowledge/domain-05/25_llm-risks-limitations-and-failure-modes/knowledge.md) · [8 道练习](knowledge/domain-05/25_llm-risks-limitations-and-failure-modes/questions.md)
-- [ ] 🟡 **26. Human-in-the-loop 验证策略设计**
+- [x] 🟡 **26. Human-in-the-loop 验证策略设计** — 学习序号 26 · 2026-10-02 · [学习](knowledge/domain-05/26_human-in-the-loop-validation-strategies/knowledge.md) · [8 道练习](knowledge/domain-05/26_human-in-the-loop-validation-strategies/questions.md)
 - [ ] 🟡 **27. 面向 AI 系统的合规要求（GDPR/HIPAA/FedRAMP 在 LLM 场景下的应用）**
 - [ ] 🔴 **28. 伦理 AI 考量（偏见、公平性、透明度）**
 
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-10-02：完成 #26 Human-in-the-loop 验证策略设计（学习序号 26，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Apply human-in-the-loop validation strategies”；核查 Anthropic agent checkpoint、computer-use 人工确认、autonomy/safety、Managed Agents permission policies 与 human grader 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦 risk-based trigger、review package、审批与执行 payload 绑定、queue/SLO、automation bias 和人工控制评价，不重复 #24 整体 guardrails，也不提前展开 #27 法规要求。
 - 2026-10-01：完成 #25 LLM 系统的风险、局限性与失效模式分类学（学习序号 25，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Identify risks, limitations, and failure modes of LLM systems”；核查 Anthropic hallucination、direct/indirect injection、output consistency、prompt leak、context engineering、agent architecture 与 agent evaluation 官方资料。无清单条目冲突；补充必要范围边界：本课以 limitation/failure mode/risk 的概念区分、全栈 taxonomy、因果归因、risk register 和 residual-risk 排序为主，不重复 #24 的控制实现，也不提前展开 #26 HITL、#27 合规或 #28 伦理专题。
 - 2026-09-30：完成 #24 Guardrails 与安全控制实现模式（学习序号 24，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Implement guardrails and safety controls”；核查 Anthropic jailbreak/prompt injection、tool use/strict schema、prompt leak、content moderation、computer use 与 Managed Agents permission 官方资料。无清单条目冲突；补充必要范围边界：本课以 input/context/model/tool/output/operations 的纵深防御和确定性 enforcement 为主，不提前展开 #25 风险分类、#26 HITL 方法、#27 合规映射或 #35 system prompt 设计。
 - 2026-09-29：完成 #23 基于日志和可观测性工具的系统性能监控（学习序号 23，两个文件、8 道练习）。直接对齐 Guide Domain 4 的 “Monitor system performance using logging and observability tools”；核查 Anthropic API errors、rate limits、Usage/Cost API、agent eval 生产监控实践及 OpenTelemetry 官方资料。无清单条目冲突；补充必要边界：#07 侧重规模化 observability 架构，本课侧重用端到端 telemetry、版本/slices、SLO/告警与质量抽样发现 production drift，并把失败反馈为 regression eval。Domain 4 的清单知识点至此全部完成。
