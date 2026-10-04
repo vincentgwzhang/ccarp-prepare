@@ -51,7 +51,7 @@
 - [x] 🔴 **25. LLM 系统的风险/局限性/失效模式分类学** — 学习序号 25 · 2026-10-01 · [学习](knowledge/domain-05/25_llm-risks-limitations-and-failure-modes/knowledge.md) · [8 道练习](knowledge/domain-05/25_llm-risks-limitations-and-failure-modes/questions.md)
 - [x] 🟡 **26. Human-in-the-loop 验证策略设计** — 学习序号 26 · 2026-10-02 · [学习](knowledge/domain-05/26_human-in-the-loop-validation-strategies/knowledge.md) · [8 道练习](knowledge/domain-05/26_human-in-the-loop-validation-strategies/questions.md)
 - [x] 🟡 **27. 面向 AI 系统的合规要求（GDPR/HIPAA/FedRAMP 在 LLM 场景下的应用）** — 学习序号 27 · 2026-10-03 · [学习](knowledge/domain-05/27_ai-compliance-gdpr-hipaa-fedramp/knowledge.md) · [8 道练习](knowledge/domain-05/27_ai-compliance-gdpr-hipaa-fedramp/questions.md)
-- [ ] 🔴 **28. 伦理 AI 考量（偏见、公平性、透明度）**
+- [x] 🔴 **28. 伦理 AI 考量（偏见、公平性、透明度）** — 学习序号 28 · 2026-10-04 · [学习](knowledge/domain-05/28_ethical-ai-bias-fairness-transparency/knowledge.md) · [8 道练习](knowledge/domain-05/28_ethical-ai-bias-fairness-transparency/questions.md)
 
 ---
 
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-10-04：完成 #28 伦理 AI：偏见、公平性与透明度（学习序号 28，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Address ethical AI considerations (bias, fairness, transparency)”；核查 Anthropic bias evaluation/system cards/Transparency Hub 与 NIST AI RMF 官方资料。无清单条目冲突；补充必要范围边界：本课把伦理 AI 作为 end-to-end socio-technical system 属性，聚焦 harm→fairness objective→paired/slice/mixed-method evaluation→mitigation→audience-specific transparency/recourse→持续治理，不把单一 benchmark、免责声明或 model card 当作系统公平证明。Domain 5 的清单知识点至此全部完成。
 - 2026-10-03：完成 #27 GDPR/HIPAA/FedRAMP 在 LLM 场景下的合规要求（学习序号 27，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Ensure compliance with regulations (e.g., GDPR, HIPAA, FedRAMP)”；核查 EUR-Lex/European Commission、HHS 与 FedRAMP 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦 applicability、完整数据流、角色/授权边界、requirement→control→evidence、shared responsibility 与持续变更治理，不提供个案法律意见，也不把任何未核查的 Claude 产品合规状态作为结论。
 - 2026-10-02：完成 #26 Human-in-the-loop 验证策略设计（学习序号 26，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Apply human-in-the-loop validation strategies”；核查 Anthropic agent checkpoint、computer-use 人工确认、autonomy/safety、Managed Agents permission policies 与 human grader 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦 risk-based trigger、review package、审批与执行 payload 绑定、queue/SLO、automation bias 和人工控制评价，不重复 #24 整体 guardrails，也不提前展开 #27 法规要求。
 - 2026-10-01：完成 #25 LLM 系统的风险、局限性与失效模式分类学（学习序号 25，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Identify risks, limitations, and failure modes of LLM systems”；核查 Anthropic hallucination、direct/indirect injection、output consistency、prompt leak、context engineering、agent architecture 与 agent evaluation 官方资料。无清单条目冲突；补充必要范围边界：本课以 limitation/failure mode/risk 的概念区分、全栈 taxonomy、因果归因、risk register 和 residual-risk 排序为主，不重复 #24 的控制实现，也不提前展开 #26 HITL、#27 合规或 #28 伦理专题。
