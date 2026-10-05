@@ -57,7 +57,7 @@
 
 ## Domain 6 · Stakeholder Communication & Lifecycle Management — 14%（你的强项区）
 
-- [ ] 🟢 **29. 结构化发现与需求收集框架**
+- [x] 🟢 **29. 结构化发现与需求收集框架** — 学习序号 29 · 2026-10-05 · [学习](knowledge/domain-06/29_structured-discovery-and-requirements/knowledge.md) · [8 道练习](knowledge/domain-06/29_structured-discovery-and-requirements/questions.md)
 - [ ] 🟢 **30. 架构决策与权衡的沟通方法（ADR 等）**
 - [ ] 🟢 **31. 干系人反馈闭环与 SLA 对齐管理**
 - [ ] 🟢 **32. 架构文档标准与实施指导交付**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-10-05：完成 #29 结构化发现与需求收集框架（学习序号 29，两个文件、8 道练习）。直接对齐 Guide Domain 6 的 “Conduct structured discovery and requirement gathering”；核查 Anthropic agent architecture/evaluation、NIST AI RMF stakeholder requirements 与 AWS Generative AI scoping 官方资料。无清单条目冲突；补充必要范围边界：本课把模糊方案诉求转化为 problem/outcome、stakeholder、workflow、task/data/tool/autonomy/NFR/evaluation contract，并以 traceability 和 Definition of Ready 收口；不提前替代 #30 的架构决策沟通、#31 的持续反馈/SLA、#32 的交付文档或 #33 的生命周期管理。
 - 2026-10-04：完成 #28 伦理 AI：偏见、公平性与透明度（学习序号 28，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Address ethical AI considerations (bias, fairness, transparency)”；核查 Anthropic bias evaluation/system cards/Transparency Hub 与 NIST AI RMF 官方资料。无清单条目冲突；补充必要范围边界：本课把伦理 AI 作为 end-to-end socio-technical system 属性，聚焦 harm→fairness objective→paired/slice/mixed-method evaluation→mitigation→audience-specific transparency/recourse→持续治理，不把单一 benchmark、免责声明或 model card 当作系统公平证明。Domain 5 的清单知识点至此全部完成。
 - 2026-10-03：完成 #27 GDPR/HIPAA/FedRAMP 在 LLM 场景下的合规要求（学习序号 27，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Ensure compliance with regulations (e.g., GDPR, HIPAA, FedRAMP)”；核查 EUR-Lex/European Commission、HHS 与 FedRAMP 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦 applicability、完整数据流、角色/授权边界、requirement→control→evidence、shared responsibility 与持续变更治理，不提供个案法律意见，也不把任何未核查的 Claude 产品合规状态作为结论。
 - 2026-10-02：完成 #26 Human-in-the-loop 验证策略设计（学习序号 26，两个文件、8 道练习）。直接对齐 Guide Domain 5 的 “Apply human-in-the-loop validation strategies”；核查 Anthropic agent checkpoint、computer-use 人工确认、autonomy/safety、Managed Agents permission policies 与 human grader 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦 risk-based trigger、review package、审批与执行 payload 绑定、queue/SLO、automation bias 和人工控制评价，不重复 #24 整体 guardrails，也不提前展开 #27 法规要求。
