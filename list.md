@@ -67,7 +67,7 @@
 
 ## Domain 2 · Claude Models, Prompting & Context Engineering — 13%
 
-- [ ] 🔴 **34. Claude 模型家族选型权衡（Opus/Sonnet/Haiku 的成本/延迟/能力对比）**
+- [x] 🔴 **34. Claude 模型选型权衡（能力/质量/延迟/成本/平台与生命周期）** — 学习序号 34 · 2026-10-10 · [学习](knowledge/domain-02/34_claude-model-selection-tradeoffs/knowledge.md) · [8 道练习](knowledge/domain-02/34_claude-model-selection-tradeoffs/questions.md)
 - [ ] 🟡 **35. System Prompt 设计与 Guardrail 模式**
 - [ ] 🟡 **36. Prompt 工程技巧：zero-shot / few-shot / chain-of-thought**
 - [ ] 🟡 **37. 上下文窗口管理与 Token 优化（长上下文策略、"lost in the middle"问题）**
@@ -97,6 +97,7 @@
 
 ## 执行记录
 
+- 2026-10-10：完成 #34 Claude 模型选型权衡（学习序号 34，两个文件、8 道练习）。直接对齐 Guide Domain 2 的 “Select appropriate Claude models based on trade-offs”；核查 Anthropic Models overview、Choosing a model、cost/intelligence、model IDs/versioning、deprecations 与 evaluation 官方文档。按 Guide 和当前产品事实做必要清单修正：移除标题中将 Opus/Sonnet/Haiku 固化为全部范围的表述，改为能力、质量、延迟、成本、平台和生命周期的稳定决策框架；当前 lineup 仅作带日期示例。教材以 workload-specific hard gates、cost per successful task、effort/model 双旋钮、多模型 routing、pinned ID 和 retirement migration 为主，不把具体价格、型号排名或窗口数字作为考试答案。
 - 2026-10-09：完成 #33 AI 方案生命周期模型（学习序号 33，两个文件、8 道练习）。直接对齐 Guide Domain 6 的 “Support lifecycle phases (discovery, design, handoff, monitoring, iteration)”；核查 Anthropic agent evaluation、AWS Generative AI lifecycle / Responsible AI 与 NIST AI RMF Core/Playbook 官方资料。无清单条目冲突；补充必要整合边界：本课以 evidence-based phase gates、version lineage、明确 handoff acceptance、production feedback→regression→staged change 和 retirement 为主线，串联 #29–#32 而不重复其专题内容。Domain 6 的清单知识点至此全部完成。
 - 2026-10-08：完成 #32 架构文档标准与实施指导交付（学习序号 32，两个文件、8 道练习）。直接对齐 Guide Domain 6 的 “Document architectures and provide implementation guidance”；核查 Anthropic tool/context/evaluation 官方资料，以及 C4、arc42 官方架构文档方法。无清单条目冲突；补充必要范围边界：本课聚焦 audience-specific views、Claude-specific prompt/context/tool/eval contracts、quality/risk traceability、vertical implementation units、handoff package 与 docs-as-code drift control，不提前替代 #33 的完整方案生命周期治理。
 - 2026-10-07：完成 #31 干系人反馈闭环与 SLA 对齐管理（学习序号 31，两个文件、8 道练习）。直接对齐 Guide Domain 6 的 “Manage stakeholder feedback loops and expectation alignment (including SLAs)”；核查 Anthropic agent eval/production quality 复盘、Google SRE SLI/SLO/SLA 与 error-budget policy，以及 AWS production feedback 官方资料。无清单条目冲突；补充必要范围边界：本课聚焦多源信号→trace/context→triage→decision→regression eval→staged release→stakeholder closure 的闭环，严格区分 SLI/SLO/SLA，并把严重 security/privacy failure 与可消耗 error budget 分离；不提前替代 #32 的完整架构文档和实施指导或 #33 的整体生命周期。
